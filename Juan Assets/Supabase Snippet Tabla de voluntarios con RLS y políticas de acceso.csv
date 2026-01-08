@@ -1,0 +1,7 @@
+column_name,data_type,is_nullable
+id,uuid,NO
+nombre,text,NO
+email,text,NO
+pais,text,NO
+ciudad,text,YES
+created_at,timestamp with time zone,NO

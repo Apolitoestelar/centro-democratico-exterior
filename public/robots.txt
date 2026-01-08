@@ -1,0 +1,12 @@
+# robots.txt para Centro Democrático Exterior
+# Permite el rastreo completo del sitio
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tudominio.com/sitemap.xml
+
+# Bloquear directorios privados (si los hubiera)
+Disallow: /api/
+Disallow: /admin/
