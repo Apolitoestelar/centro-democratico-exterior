@@ -1,7 +1,7 @@
 import { Award, Globe2, Shield, Briefcase, GraduationCap, Users, ExternalLink } from 'lucide-react';
-import alejandroImage from 'figma:asset/dbecfe1b5674b57de1dfea4481b55adee713e740.png';
-import olgaImage from 'figma:asset/5c5fb4fd5029318435667e5aedd28b5d5d336d7c.png';
-import camiloImage from 'figma:asset/ecd9f6e71fa20d3410615160b9c65f620e926582.png';
+import alejandroImage from '../../assets/dbecfe1b5674b57de1dfea4481b55adee713e740.png';
+import olgaImage from '../../assets/5c5fb4fd5029318435667e5aedd28b5d5d336d7c.png';
+import camiloImage from '../../assets/ecd9f6e71fa20d3410615160b9c65f620e926582.png';
 
 export function Candidates() {
   const candidates = [

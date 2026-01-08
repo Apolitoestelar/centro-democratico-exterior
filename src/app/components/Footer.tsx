@@ -9,7 +9,7 @@ import {
   ExternalLink
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import logoCD from 'figma:asset/53fa2ff5f390fd3584518cf066c49832b639ffaa.png';
+import logoCD from '../../assets/53fa2ff5f390fd3584518cf066c49832b639ffaa.png';
 
 export function Footer() {
   const footerLinks = {

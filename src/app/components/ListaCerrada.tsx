@@ -1,6 +1,6 @@
 import { CheckCircle, XCircle, ArrowDown, Hand, AlertCircle } from 'lucide-react';
 import { Button } from './ui/button';
-import votacionImage from 'figma:asset/1cca7d4e68b6d7b884c9cb094dfd277522fac285.png';
+import votacionImage from '../../assets/1cca7d4e68b6d7b884c9cb094dfd277522fac285.png';
 
 export function ListaCerrada() {
   return (

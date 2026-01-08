@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from './ui/button';
-import logoCD from 'figma:asset/039f153c6eab94e68a1c342038a80e441d70eff4.png';
+import logoCD from '../../assets/039f153c6eab94e68a1c342038a80e441d70eff4.png';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

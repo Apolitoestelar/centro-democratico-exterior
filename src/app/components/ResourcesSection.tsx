@@ -11,7 +11,7 @@ import {
 import { Button } from './ui/button';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import guiaVotacion from 'figma:asset/0f5887beb8a60be5af943f9803a3f9acbc154c00.png';
+import guiaVotacion from '../../assets/0f5887beb8a60be5af943f9803a3f9acbc154c00.png';
 import { CalendarReminderModal } from './CalendarReminderModal';
 
 export function ResourcesSection() {

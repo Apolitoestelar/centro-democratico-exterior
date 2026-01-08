@@ -1,15 +1,79 @@
 
   <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Landing Page for Political Campaign</title>
-    </head>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Centro Democrático Exterior - Vota por el Cambio</title>
+    <meta name="description" content="Centro Democrático Exterior - Únete al movimiento por el cambio. Conoce nuestras propuestas, candidatos y cómo votar desde el exterior." />
+    <meta name="keywords" content="Centro Democrático, exterior, voto, elecciones, Colombia, cambio, política" />
+    <meta name="author" content="Centro Democrático Exterior" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://centrodemocratico-exterior.netlify.app" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://centrodemocratico-exterior.netlify.app" />
+    <meta property="og:title" content="Centro Democrático Exterior - Vota por el Cambio" />
+    <meta property="og:description" content="Únete al movimiento por el cambio. Conoce nuestras propuestas, candidatos y cómo votar desde el exterior." />
+    <meta property="og:image" content="https://centrodemocratico-exterior.netlify.app/og-image.jpg" />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://centrodemocratico-exterior.netlify.app" />
+    <meta property="twitter:title" content="Centro Democrático Exterior - Vota por el Cambio" />
+    <meta property="twitter:description" content="Únete al movimiento por el cambio. Conoce nuestras propuestas, candidatos y cómo votar desde el exterior." />
+    <meta property="twitter:image" content="https://centrodemocratico-exterior.netlify.app/og-image.jpg" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    
+    <!-- Google Tag Manager -->
+    <script>
+      if (typeof window !== 'undefined') {
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-XXXXXXX');
+      }
+    </script>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PoliticalParty",
+      "name": "Centro Democrático Exterior",
+      "url": "https://centrodemocratico-exterior.netlify.app",
+      "description": "Movimiento político colombiano enfocado en representar a los ciudadanos en el exterior",
+      "sameAs": [
+        "https://www.facebook.com/centrodemocratico",
+        "https://twitter.com/centrodemocratico",
+        "https://www.instagram.com/centrodemocratico"
+      ]
+    }
+    </script>
+  </head>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
   

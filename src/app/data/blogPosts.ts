@@ -1,6 +1,6 @@
-import faqImage from 'figma:asset/c6998c0bae79652114aa05dc34f7f7ec8f676da6.png';
-import votacionImage from 'figma:asset/1cca7d4e68b6d7b884c9cb094dfd277522fac285.png';
-import colombianosCafeImage from 'figma:asset/215cedb4344b1216fe08be6a516b79978a6a8a6d.png';
+import faqImage from '../../assets/c6998c0bae79652114aa05dc34f7f7ec8f676da6.png';
+import votacionImage from '../../assets/1cca7d4e68b6d7b884c9cb094dfd277522fac285.png';
+import colombianosCafeImage from '../../assets/215cedb4344b1216fe08be6a516b79978a6a8a6d.png';
 
 export interface BlogPost {
   id: string;
