@@ -2,7 +2,6 @@
 # Copia estas en: Site settings > Environment variables
 
 VITE_SUPABASE_URL=https://emcnyhdjewbrpfhztemj.supabase.co
-VITE_SUPABASE_ANON_KEY=sb_publishable_7sT_sblLlvsWcHHfFHCWqw_1E7cs
-VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
-VITE_GOOGLE_ADS_CONVERSION_ID=AW-XXXXXXXXX
-VITE_SITE_URL=https://tu-sitio.netlify.app
+VITE_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVtY255aGRqZXdicnBmaHp0ZW1qIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3NTIwMzEsImV4cCI6MjA4MzMyODAzMX0.GY_3a8idnhMQVjxAT0C8Gj6RLmgo6VOocgEfvXdBUNU
+VITE_GA_MEASUREMENT_ID=G-98B1E762L3
+VITE_SITE_URL=https://cdexterior.com
