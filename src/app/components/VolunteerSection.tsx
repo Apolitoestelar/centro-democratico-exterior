@@ -21,7 +21,10 @@ export function VolunteerSection() {
     setError(null);
 
     try {
-      const { error: supabaseError } = await supabase
+      console.log('Enviando datos:', formData);
+      console.log('Supabase URL:', import.meta.env.VITE_SUPABASE_URL);
+      
+      const { data, error: supabaseError } = await supabase
         .from('voluntarios')
         .insert([
           {
@@ -32,9 +35,11 @@ export function VolunteerSection() {
           }
         ]);
 
+      console.log('Respuesta Supabase:', { data, error: supabaseError });
+
       if (supabaseError) {
         console.error('Error al enviar datos:', supabaseError);
-        setError('Hubo un error al enviar el formulario. Por favor, intenta de nuevo.');
+        setError(`Error: ${supabaseError.message}`);
         setIsSubmitting(false);
         return;
       }
@@ -46,7 +51,7 @@ export function VolunteerSection() {
       }, 5000);
     } catch (err) {
       console.error('Error inesperado:', err);
-      setError('Hubo un error inesperado. Por favor, intenta de nuevo.');
+      setError(`Error inesperado: ${err}`);
     } finally {
       setIsSubmitting(false);
     }
