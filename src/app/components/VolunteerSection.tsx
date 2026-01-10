@@ -38,8 +38,8 @@ export function VolunteerSection() {
       console.log('Respuesta Supabase:', { data, error: supabaseError });
 
       if (supabaseError) {
-        console.error('Error al enviar datos:', supabaseError);
-        setError(`Error: ${supabaseError.message}`);
+        console.error('Error al enviar datos:', JSON.stringify(supabaseError, null, 2));
+        setError(`Error: ${supabaseError.message || 'Error desconocido'}`);
         setIsSubmitting(false);
         return;
       }
