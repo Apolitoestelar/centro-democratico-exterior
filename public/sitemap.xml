@@ -3,7 +3,7 @@
   
   <!-- Página principal -->
   <url>
-    <loc>https://centrodemocratico-exterior.netlify.app/</loc>
+    <loc>https://cdexterior.com/</loc>
     <lastmod>2024-12-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
   
   <!-- Política de privacidad -->
   <url>
-    <loc>https://centrodemocratico-exterior.netlify.app/politica-de-privacidad</loc>
+    <loc>https://cdexterior.com/politica-de-privacidad</loc>
     <lastmod>2024-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -19,7 +19,7 @@
   
   <!-- Términos de uso -->
   <url>
-    <loc>https://centrodemocratico-exterior.netlify.app/terminos-de-uso</loc>
+    <loc>https://cdexterior.com/terminos-de-uso</loc>
     <lastmod>2024-12-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
@@ -27,28 +27,28 @@
   
   <!-- Blog posts -->
   <url>
-    <loc>https://centrodemocratico-exterior.netlify.app/blog/que-es-lista-cerrada</loc>
+    <loc>https://cdexterior.com/blog/que-es-lista-cerrada</loc>
     <lastmod>2024-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://centrodemocratico-exterior.netlify.app/blog/como-votar-desde-exterior</loc>
+    <loc>https://cdexterior.com/blog/como-votar-desde-exterior</loc>
     <lastmod>2024-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://centrodemocratico-exterior.netlify.app/blog/camara-colombianos-exterior</loc>
+    <loc>https://cdexterior.com/blog/camara-colombianos-exterior</loc>
     <lastmod>2024-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <url>
-    <loc>https://centrodemocratico-exterior.netlify.app/blog/preguntas-frecuentes-elecciones-exterior</loc>
+    <loc>https://cdexterior.com/blog/preguntas-frecuentes-elecciones-exterior</loc>
     <lastmod>2024-12-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
