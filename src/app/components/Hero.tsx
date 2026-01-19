@@ -107,7 +107,7 @@ export function Hero() {
             {/* Social Media Links */}
             <div className="flex items-center justify-center gap-3">
               <a 
-                href="#" 
+                href="https://www.facebook.com/CDexterior" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-blue-600 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center transition-all hover:scale-110"
@@ -116,7 +116,7 @@ export function Hero() {
                 <Facebook className="w-4 h-4 text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/CDexterior" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-blue-600 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center transition-all hover:scale-110"
@@ -125,7 +125,7 @@ export function Hero() {
                 <Instagram className="w-4 h-4 text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://x.com/CDColExt" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-blue-600 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center transition-all hover:scale-110"

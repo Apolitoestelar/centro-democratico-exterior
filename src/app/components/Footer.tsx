@@ -34,9 +34,9 @@ export function Footer() {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: '#', label: 'Facebook' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Facebook, href: 'https://www.facebook.com/CDexterior', label: 'Facebook' },
+    { icon: Twitter, href: 'https://x.com/CDColExt', label: 'Twitter' },
+    { icon: Instagram, href: 'https://www.instagram.com/CDexterior', label: 'Instagram' },
     { icon: Youtube, href: '#', label: 'YouTube' }
   ];
 
@@ -68,7 +68,7 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-3">
                 <Phone className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>+57 (1) 234-5678</span>
+                <span>+1-214-551-8773</span>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
