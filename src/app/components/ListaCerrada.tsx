@@ -106,7 +106,7 @@ export function ListaCerrada() {
               size="lg" 
               className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 text-lg px-8 py-6 h-auto"
             >
-              vota por Uribe y los de Uribe
+              Vamos a continuar el legado de Uribe
             </Button>
           </div>
         </div>
