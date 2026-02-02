@@ -1,5 +1,6 @@
 import { Hero } from '../components/Hero';
 import { Navigation } from '../components/Navigation';
+import { VotingLocationSection } from '../components/VotingLocationSection';
 import { AboutCamara } from '../components/AboutCamara';
 import { ListaCerrada } from '../components/ListaCerrada';
 import { Candidates } from '../components/Candidates';
@@ -17,6 +18,7 @@ export function HomePage() {
       <SEOHead />
       <Navigation />
       <Hero />
+      <VotingLocationSection />
       <AboutCamara />
       <ListaCerrada />
       <Candidates />
