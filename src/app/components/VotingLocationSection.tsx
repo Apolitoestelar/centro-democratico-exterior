@@ -1,9 +1,12 @@
 import { MapPin, ExternalLink, Clock } from 'lucide-react';
 import { Button } from './ui/button';
+import { useNavigate } from 'react-router-dom';
 
 export function VotingLocationSection() {
+  const navigate = useNavigate();
+
   const handleFindLocation = () => {
-    window.open('https://wsp.registraduria.gov.co/censo/consultar', '_blank', 'noopener,noreferrer');
+    navigate('/puesto-de-votacion');
   };
 
   return (
@@ -38,7 +41,7 @@ export function VotingLocationSection() {
 
         {/* Micro-copy */}
         <p className="text-gray-500 text-lg mb-8">
-          Consulta oficial, rápida y segura. Te toma menos de 30 segundos.
+          Ten tu cédula lista. Consulta oficial y segura.
         </p>
 
         {/* Important Note */}

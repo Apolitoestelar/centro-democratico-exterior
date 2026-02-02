@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Iframe Registraduría</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .iframe-container {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .test-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .error-info {
+            background: #ffebee;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: #c62828;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🔍 Investigación Técnica: Iframe Registraduría</h1>
+        
+        <div class="test-info">
+            <h3>Prueba 1: Iframe Directo</h3>
+            <p><strong>URL:</strong> https://wsp.registraduria.gov.co/censo/consultar</p>
+            <p><strong>Objetivo:</strong> Verificar si permite embedding</p>
+        </div>
+
+        <div class="iframe-container">
+            <iframe 
+                src="https://wsp.registraduria.gov.co/censo/consultar"
+                title="Consulta Registraduría - Prueba Directa"
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="test-info">
+            <h3>Prueba 2: Iframe con Parámetros</h3>
+            <p><strong>URL:</strong> Con sandbox y allow policies</p>
+        </div>
+
+        <div class="iframe-container">
+            <iframe 
+                src="https://wsp.registraduria.gov.co/censo/consultar"
+                title="Consulta Registraduría - Con Sandbox"
+                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                allow="geolocation; microphone; camera"
+                loading="lazy">
+            </iframe>
+        </div>
+
+        <div class="error-info">
+            <h3>📋 Resultados de la Investigación:</h3>
+            <p id="results">Cargando pruebas...</p>
+        </div>
+    </div>
+
+    <script>
+        // Detectar errores de iframe
+        window.addEventListener('load', function() {
+            const iframes = document.querySelectorAll('iframe');
+            const results = document.getElementById('results');
+            let testResults = [];
+
+            iframes.forEach((iframe, index) => {
+                iframe.addEventListener('load', function() {
+                    try {
+                        // Intentar acceder al contenido del iframe
+                        const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+                        testResults.push(`✅ Iframe ${index + 1}: Cargó correctamente`);
+                    } catch (error) {
+                        testResults.push(`❌ Iframe ${index + 1}: Error CORS - ${error.message}`);
+                    }
+                    updateResults();
+                });
+
+                iframe.addEventListener('error', function() {
+                    testResults.push(`❌ Iframe ${index + 1}: Error de carga`);
+                    updateResults();
+                });
+            });
+
+            function updateResults() {
+                if (testResults.length === iframes.length) {
+                    results.innerHTML = testResults.join('<br>') + 
+                        '<br><br><strong>Conclusión:</strong> ' + 
+                        (testResults.some(r => r.includes('✅')) ? 
+                            'Iframe viable - Podemos proceder con la integración' : 
+                            'Iframe bloqueado - Necesitamos estrategia alternativa');
+                }
+            }
+
+            // Timeout para casos donde no hay respuesta
+            setTimeout(() => {
+                if (testResults.length === 0) {
+                    results.innerHTML = '⏱️ Timeout: Los iframes no respondieron. Posible bloqueo de X-Frame-Options.';
+                }
+            }, 10000);
+        });
+    </script>
+</body>
+</html>
