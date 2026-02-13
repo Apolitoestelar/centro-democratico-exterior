@@ -1,12 +1,26 @@
 import { Award, Globe2, Shield, Briefcase, GraduationCap, Users, ExternalLink } from 'lucide-react';
+import alejandroImage from '../../assets/dbecfe1b5674b57de1dfea4481b55adee713e740.png';
 import olgaImage from '../../assets/5c5fb4fd5029318435667e5aedd28b5d5d336d7c.png';
 import camiloImage from '../../assets/ecd9f6e71fa20d3410615160b9c65f620e926582.png';
 
 export function Candidates() {
   const candidates = [
     {
-      name: 'Olga Lucía Murcia',
+      name: 'Alejandro Murcia',
       role: 'Cabeza de Lista',
+      image: alejandroImage,
+      tagline: 'Liderazgo, claridad y dirección',
+      description: 'Líder con experiencia en representación de colombianos en el exterior. Comprometido con la defensa de derechos y la institucionalidad fuerte.',
+      qualities: [
+        { icon: Award, text: 'Liderazgo probado en comunidades del exterior' },
+        { icon: Shield, text: 'Defensor de seguridad democrática y libertad' },
+        { icon: Briefcase, text: 'Experiencia en gestión institucional' },
+        { icon: Users, text: 'Confianza y orden en la representación' }
+      ]
+    },
+    {
+      name: 'Olga Lucía Murcia',
+      role: 'Candidata',
       image: olgaImage,
       tagline: 'Mirada internacional y rigor técnico',
       description: 'Experta en temas migratorios con preparación técnica sólida. Aporta perspectiva femenina y rigor en la defensa de derechos consulares.',
@@ -119,13 +133,13 @@ export function Candidates() {
                     {index === 0 && (
                       <div className="bg-blue-50 border-l-4 border-blue-900 p-4 rounded-r-lg">
                         <p className="text-sm text-blue-900">
-                          💡 <strong>Como cabeza de lista,</strong> Olga lidera el equipo que representa la claridad, experiencia y compromiso del Centro Democrático.
+                          💡 <strong>Como cabeza de lista,</strong> Alejandro lidera el equipo que representa la claridad, experiencia y compromiso del Centro Democrático.
                         </p>
                       </div>
                     )}
                     
                     {/* Olga Murcia Website Link */}
-                    {index === 0 && (
+                    {index === 1 && (
                       <div>
                         <a 
                           href="https://olgamurcia.com/"
@@ -153,7 +167,7 @@ export function Candidates() {
               Un equipo completo, una sola marca
             </h3>
             <p className="text-blue-100 text-lg mb-8">
-              Al votar por el <strong className="text-yellow-400">Centro Democrático</strong>, votas por los dos candidatos como equipo unificado. No hay división de votos, hay suma de fuerza.
+              Al votar por el <strong className="text-yellow-400">Centro Democrático</strong>, votas por los tres candidatos como equipo unificado. No hay división de votos, hay suma de fuerza.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-3">
